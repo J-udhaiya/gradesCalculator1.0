@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color: salmon ! important;
+    width:auto;
+    height:auto;
+   
+    
+}
+.wrapper{
+    text-align:center;
+    background-color: rgb(238, 238, 238);
+    width:auto;
+    margin:10% 20% 0;
+    
+}
+.wrapper h1{
+    color:rgb(155, 6, 147);
+    padding-top:0.5em;
+    font-family: 'Lobster', cursive;
+}
+.form-wrapper{
+    text-align: center;
+    color:rgb(155, 6, 147);
+    font-weight:500;
+   
+}
+.percentage{
+    background-color:#1B0A3C;
+    color:white;
+    border:none;
+    outline:none;
+    margin-top:1em;
+    padding:1em;
+    font-weight:700;
+}
+.giphy{
+    width:40%;
+    height:auto;
+}
+#Science,#Maths,#Computer,#English,#Social{
+    margin:.5em 0;
+}
