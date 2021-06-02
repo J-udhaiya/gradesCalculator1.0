@@ -150,7 +150,7 @@ hr{
     position:relative;
 }
 .fimage-wrapper h3{
-    font-size:30px;
+    font-size:24px;
 }
  .overlay{
      background-image:url("food.jpg") ;
@@ -163,6 +163,7 @@ hr{
      font-size:24px;
      padding:4px 12px;
      border-radius:0 16px 16px 0 ;
+     width:auto;
  }
 .fa-bandcamp{
  color:var(--primary-color);
@@ -193,6 +194,9 @@ hr{
         color:#fff;
         font-size:24px;
     }
+    .overlay{
+        background-image:url("food.jpg") ;
+    }
     .cap-on-banner{
         font-size:56px;
     }
@@ -201,6 +205,7 @@ hr{
     }
     .save-tag{
         padding:4px 12px;
+        width:auto;
     }
 }
 @media only screen and (max-width:1200px){
@@ -230,7 +235,12 @@ hr{
         background-image:url("food.jpg") ;
     }
     .save-tag{
-        padding:4px 12px;
+        padding:2px 12px;
+        width:auto;
+        
+    }
+    .fimage-wrapper h3{
+        font-size:18px;
     }
 }
 @media only screen and (max-width:992px){
@@ -316,16 +326,18 @@ hr{
         width:100%;
     }
     .fimage-wrapper h3,.save-tag{
-        font-size:16px;
+        font-size:14px;
     }
-    .save-tag{
-        padding:4px 12px;
-    }
+    
     .CI,.caption-lines{
         font-size:14px;
     }
     .hotel-name,.amt{
         font-size:20px;
+    }
+    .save-tag{
+        padding:4px 8px;
+        width:auto;
     }
 }
 @media only screen and (max-width:576px){
@@ -366,22 +378,17 @@ hr{
         grid-column-gap:1rem;
         
     }
-    .save-tag{
-        background-color:var(--primary-color) ;
-        position:absolute;
-        top:12px;
-        left:0;
-        font-size:14px;
-        padding:4px 12px;
-        border-radius:0 16px 16px 0;
+    .save-tag {
+        font-size:20px;
+        padding:2px 0;
+        width:auto;
+       
     }
     .fimage-wrapper{
         width:100%;
     }
    
-    .fimage-wrapper h3,.save-tag{
-        font-size:16px;
-    }
+    
     .sliding-navbar{
         width:60vw;
     }
