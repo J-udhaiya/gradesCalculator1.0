@@ -1,51 +1,398 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{
+    --primary-color:#05944F;
+    --secondary-color:#eee;
+}
 *{
-    margin:0;
     padding:0;
+    margin:0;
     box-sizing:border-box;
-    
+    font-family: 'Open Sans', sans-serif;
 }
-body{
-    background-color: salmon ! important;
-    width:auto;
-    height:auto;
-   
-    
-}
-.wrapper{
-    text-align:center;
-    background-color: rgb(238, 238, 238);
-    width:auto;
-    margin:10% 20% 0;
-    
-}
-.wrapper h1{
-    color:rgb(155, 6, 147);
-    padding-top:0.5em;
-   
-    font-family: 'Lobster', cursive;
-}
- 
 
-.form-wrapper{
-    text-align: center;
-    color:rgb(155, 6, 147);
-    font-weight:500;
+nav{
+    background-color: white;
+   
+   
+    display:flex;
+    justify-content: space-around;
+   padding-top:1.5rem;
+    height:96px;
+   
+   
+
+}
+.logo{
+    font-size:38px;
+    font-weight:600;
+}
+.Eats{
+    color:var(--primary-color);
+    
+}
+.sliding-navbar{
+    position:absolute;
+    top:0;
+    left:-400px;
+    height:100vh;
+    width:40vh;
+    background-color: lightskyblue;
+    padding:24px;
+    display:none;
    
 }
-.percentage{
-    background-color:#1B0A3C;
-    color:white;
-    border:none;
+.bars{
+    background-color: var(--primary-color);
+}
+.fa-bars{
+    border:1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    font-size:36px !important;
+    padding:0.2rem;
+}
+.sign-up{
+    padding:4px 12px;
+    background-color: #eee;
     outline:none;
-    margin-top:1em;
-    padding:1em;
-    font-weight:700;
+    border:none;
+    font-size:28px;
+    border-radius:8px ;
 }
-.giphy{
-    width:40%;
-    height:auto;
+.pop
+    {
+        position:absolute;
+        top:0;
+        left:0;
+        height:100vh;
+        width:40vh;
+        background-color: lightskyblue;
+        padding:24px;
+        display:block;
+        
+       
+    }
+
+
+
+.link,.sign-in{
+    margin-bottom:1rem;
+    font-size:20px;
+    font-weight: 600;
 }
-#Science,#Maths,#Computer,#English,#Social{
-    margin:.5em 0;
+.sign-in{
+    padding:12px 16px ;
+    width:220px;
+
+}
+
+.banner{
+    background-image:url("food.jpg");
+     
+     width:100vw;
+     max-width:100% ;
+    height:415px;
+    background-position:center;
+    background-size: cover;
+ 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.cap-on-banner{
+    font-size:36px;
+    color:white;
+}
+.caption{
+     margin:0 40px;
+     padding:1rem;
+     border-bottom: 1px solid lightgrey;
+}
+.caption-lines{
+    margin-bottom:1rem;
+    font-size:24px;
+}
+.Rnm{
+    margin-right:1rem;
+    color:grey;
+}
+.Dnm{
+    font-size:36px;
+    margin-bottom: 0.5rem;
+}
+.CI{
+    font-size:20px;
+}
+.food-menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:2rem  2rem 1rem 3rem;
+    flex-wrap:wrap;
+}
+.fimage-wrapper{
+    background-image:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)) ,url("food.jpg");
+    
+    width:420px;
+    height:200px;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:24px;
+}
+.fa-bandcamp{
+ color:var(--primary-color);
+}
+.hotel-name,.amt{
+    font-size:24px;
+}
+.hotel-name{
+    margin-top:0.5rem;
+}
+.amt{
+    color:grey;
+}
+@media only screen and (max-width:1400px){
+    .food-menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-column-gap:1rem;
+        margin:2rem  2rem 1rem 1rem;
+        
+    }
+    .fimage-wrapper{
+        background-image:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)) ,url("food.jpg");
+        
+        width:380px;
+        height:160px;
+        background-size: cover;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#fff;
+        font-size:24px;
+    }
+    .cap-on-banner{
+        font-size:56px;
+    }
+    .link, .sign-in{
+        font-size:24px;
+    }
+}
+@media only screen and (max-width:1200px){
+    .food-menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-column-gap:1rem;
+        margin:2rem  2rem 1rem 1rem;
+        
+    }
+    .cap-on-banner{
+        font-size:48px;
+    }
+    .fimage-wrapper{
+        background-image:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)) ,url("food.jpg");
+        
+        width:360px;
+        height:160px;
+        background-size: cover;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#fff;
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:992px){
+    .fa-bars{
+        font-size:30px !important;
+        padding:.2rem;
+    }
+    .logo{
+        font-size:36px;
+    }
+    .sign-up{
+        font-size:22px;
+        padding:10px 12px;
+    }
+    .link,.sign-in{
+        font-size:24px;
+    }
+
+    .cap-on-banner{
+        font-size:40px;
+    }
+    .food-menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-column-gap:1rem;
+        margin:2rem  2rem 1rem 1rem;
+        
+    }
+    .fimage-wrapper{
+        background-image:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)) ,url("food.jpg");
+        
+        width:360px;
+        height:160px;
+        background-size: cover;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#fff;
+        font-size:20px;
+    }
+    .Dnm{
+        font-size:42px;
+    }
+   
+    .CI,.caption-lines{
+        font-size:22px;
+        font-weight:500;
+    }
+    .hotel-name,.amt{
+        font-size:24px;
+    }
+}
+@media only screen and (max-width:768px){
+    .fa-bars{
+        font-size:16px !important;
+        padding:.2rem;
+    }
+    .sign-in{
+        font-size:20px;
+        width:auto;
+    }
+    .link{
+        font-size:20px;
+        font-weight:500;
+    }
+    .food-menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-column-gap:1rem;
+        margin:2rem  2rem 0 2rem;
+        
+    }
+    .fimage-wrapper{
+        width:100%;
+    }
+    .CI,.caption-lines{
+        font-size:14px;
+    }
+    .hotel-name,.amt{
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:576px){
+   .banner{
+       display:flex;
+       align-items: center;
+       justify-content: center;
+   }
+    .cap-on-banner{
+        font-size:28px;
+    }
+
+    .logo{
+        font-size:20px;
+        font-weight:600;
+    }
+    .sign-up{
+        padding:8px;
+        background-color: #eee;
+        outline:none;
+        border:none;
+        font-size:14px;
+        border-radius:8px ;
+    }
+    .fa-bars{
+        font-size:12px;
+        padding:.2rem;
+    }
+    .Dnm{
+        font-size:28px;
+    }
+   .caption-lines,.CI{
+       font-size:16px;
+   }
+    .food-menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap:1rem;
+        margin:2rem  2rem 0 2rem;
+        
+    }
+    .fimage-wrapper{
+        width:100%;
+    }
+    .sliding-navbar{
+        width:60vw;
+    }
+    .sign-in{
+        font-size:20px;
+        width:auto;
+    }
+    .link{
+        font-size:20px;
+    }
+}
+@media only screen and (max-width:375px){
+    .banner{
+        height:400px;
+        font-size:22px;
+        color:#fff;
+        
+    }
+    .cap-on-banner{
+      
+        width:80%;
+    }
+    .food-menu{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:0 2rem;
+        
+    }
+    .caption-lines,.CI{
+        font-size:12px;
+    }
+    .fimage-wrapper{
+        width:100%;
+        font-size:16px;
+    }
+    .sliding-navbar{
+        width:90vw;
+    }
+    .sign-in{
+        font-size:18px;
+        width:auto;
+    }
+    .link{
+        font-size:16px;
+    }
+    nav{
+        display:flex;
+        padding-top:2rem;
+    }
+    
+    .fa-bars{
+        font-size:12px;
+        padding:.2rem;
+    }
+    .logo{
+        font-size:20px;
+        font-weight:600;
+    }
+    .sign-up{
+        padding:8px;
+        background-color: #eee;
+        outline:none;
+        border:none;
+        font-size:12px;
+        border-radius:8px ;
+    }
+    .hotel-name,.amt{
+        font-size:16px;
+    }
 }

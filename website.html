@@ -4,37 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <title>Grade and Percentage Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+
+
+
+    ">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Grade and Percentage Calculator</title>
 </head>
 <body>
  
-  <div class="wrapper">
-    <h1><b>Kids grade generator</b></h1>
-  <div class="form-wrapper">
-  <form>
-    <label for="Science">Science Marks</label>
-    <input type="text"id="Science"><br>
-    <label for="Maths">Maths Marks</label>
-    <input type="text"id="Maths"><br>
-    <label for="Computer">Computer Marks</label>
-    <input type="text"id="Computer"><br>
-    <label for="English">English Marks</label>
-    <input type="text"id="English"><br>
-    <label for="Social">Social Marks</label>
-    <input type="text"id="Social1">
-  </form>
-</div>
-   <div class="get-percentage">
-     <button class="percentage">
-       Get Your Percentage
-     </button>
-   </div>
-   <div class="perc-message">
-  <p class="percNumbers"></p>
-  <p class="greetMessage"></p>
-  <img src="" alt="" class="giphy">
-   </div>
+  <nav>
+  <div class="bars-wrapper"><button class="bars"><i class="fa fa-bars" aria-hidden="true"></i></button></div> 
+    <div class="logo">Uber <span class="Eats">Eats</span> </div>
+   
+    <div class="sign-up-wrapper"><button class="sign-up">Sign up</button></div>
+  </nav>
+  <section class="sliding-navbar">
+
+  <button class="sign-in">Sign in</button>
+  <p class="link">Create your business account</p>
+  <p class="link">Add your Restaurant</p>
+  <p class="link">Sign up to deliver</p>
+  </section>
+  <section class="banner">
+   <h3 class="cap-on-banner">Indian Delivery with Uber Eats</h3>
+  </section>
+  <section class="caption">
+    <div class="caption-lines">
+  <span class="Rnm">Restaurants near me</span>
+  <i class="fa fa-angle-left" aria-hidden="true"></i>
+  <span class="Idnm">Indian delivery near me</span>
   </div>
+  <h4 class="Dnm">Indian Delivery Near Me</h4>
+  <p class="CI">Craving Indian? Discover restaurants near you and get top Indian options delivered to your door.</p>
+  </section>
+  <section class="food-menu">
+    <div class="food-card one">
+      <div class="fimage-wrapper">
+        <h3>opens at 2am</h3>
+      </div>
+      <h5 class="hotel-name">Viva Goa</h5>
+      <span class="amt"><i class="fa fa-bandcamp" aria-hidden="true"></i>. $ 234</span>
+    </div>
+    <div class="food-card two ">
+      <div class="fimage-wrapper">
+        <h3>opens at 2am</h3>
+      </div>
+      <h5 class="hotel-name">Viva Goa</h5>
+      <span class="amt"><i class="fa fa-bandcamp" aria-hidden="true"></i>. $ 123</span>
+    </div>
+    <div class="food-card three">
+      <div class="fimage-wrapper">
+        <h3>opens at 2am</h3>
+      </div>
+      <h5 class="hotel-name">Viva Goa</h5>
+      <span class="amt"><i class="fa fa-bandcamp" aria-hidden="true"></i>. $ 145</span>
+    </div>
+
+  </section>
+
+<!---
+<h2>CSS Layout Flexbox</h2>
+<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+<p>Resize the browser window to see the responsive effect.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
+<header>
+  <h2>Cities</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  <article>
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+<footer>
+  <p>Footer</p>
+</footer>
+-->
  <script src="app.js" ></script>
 
 </body>
